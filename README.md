@@ -1,6 +1,7 @@
 # terraform-aws-module-wireguard
 
-`terraform {
+```
+terraform {
   backend "remote" {
     organization = "ORGANISATION"
     workspaces {
@@ -14,8 +15,12 @@
     }
   }
 }
+```
 
-# Configure the AWS Provider
+### Configure the AWS Provider
+
+```
 provider "aws" {
   region = "REGION"
-}`
+}
+```
