@@ -1,4 +1,4 @@
-# terraform-aws-module-wireguard
+# terraform-aws-module-vpn
 
 ```
 terraform {
