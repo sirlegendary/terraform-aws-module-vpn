@@ -14,7 +14,7 @@ data "aws_ami" "latest-ubuntu" {
 }
 
 data "template_file" "userdata" {
-  template = file("userdata.sh")
+  template = file("${path.module}/userdata.sh")
 }
 
 resource "aws_key_pair" "machine_key" {
