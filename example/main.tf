@@ -1,9 +1,12 @@
 locals {
-  region = "ap-south-1"
+  region = ""
 }
 
-module "vpn-india" {
+module "vpn-region" {
     source = "../"
     aws_region = local.region
     public_key = ""
+    domain_name = ""
+    sub_domain_name = ""
+    application_name = ""
 }

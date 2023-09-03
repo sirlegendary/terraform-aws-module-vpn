@@ -5,7 +5,7 @@ resource "aws_default_vpc" "default" {
 }
 
 resource "aws_security_group" "vpnsecuritygroup" {
-  name        = "VPN Security Group"
+  name        = "${var.application_name} Security Group"
   description = "Allow http and https"
   vpc_id      = aws_default_vpc.default.id
 

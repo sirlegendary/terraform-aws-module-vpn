@@ -20,3 +20,11 @@ variable "ec2_username" {
 variable "public_key" {
   default = ""
 }
+
+variable "domain_name" {
+  description = "FQDN that you own"
+}
+
+variable "sub_domain_name" {
+  description = "Sub domain from the FQDN that you own"
+}
